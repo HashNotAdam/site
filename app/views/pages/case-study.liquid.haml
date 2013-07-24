@@ -1,0 +1,94 @@
+---
+title: Case Study
+published: false
+listed: false
+position: 40
+---
+{% extends 'index' %}
+
+{% block 'main' %}
+
+{% include 'page_head' %}
+
+{% block case-study %}
+%section#main-generic
+  %h1 Case Study
+  
+  %section#case-study
+
+    #carousel
+      %a{ href: "#", class: "arrow-left" }
+      %a{ href: "#", class: "arrow-right" }
+
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            %img{ src: "{% editable_file 'image', hint: 'Slide 1, size: 640x300px', priority: 15 %}/samples/case-studies/slide1.jpg{% endeditable_file %}", alt: ""}
+          .swiper-slide
+            %img{ src: "{% editable_file 'image', hint: 'Slide 2, size: 640x300px', priority: 15 %}/samples/case-studies/slide2.jpg{% endeditable_file %}", alt: ""}
+          .swiper-slide
+            %img{ src: "{% editable_file 'image', hint: 'Slide 3, size: 640x300px', priority: 15 %}/samples/case-studies/slide3.jpg{% endeditable_file %}", alt: ""}
+          .swiper-slide
+            %img{ src: "{% editable_file 'image', hint: 'Slide 4, size: 640x300px', priority: 15 %}/samples/case-studies/slide2.jpg{% endeditable_file %}", alt: ""}
+          .swiper-slide
+            %img{ src: "{% editable_file 'image', hint: 'Slide 5, size: 640x300px', priority: 15 %}/samples/case-studies/slide3.jpg{% endeditable_file %}", alt: ""}
+      #carousel-pagination-wrapper
+        #carousel-pagination
+
+    %section#main
+      %h2 Happier customers and efficient coding!
+
+      %h3 THE PROBLEM
+
+      %p It was difficult to boostrap and to maintain our own CMS.  For our customer, the first issue is to be able to modify their content EFFICIENTLY.
+
+      %h3 THE SOLUTION
+
+      %p It's easy to propose LocomotiveCMS to our customer after a quick demo of front editing capabilities. And for our team the Wagon is a great tool for maintaining code through Git.
+
+      %h3 THE RESULTS
+
+      %p Happier customers and efficient coding!
+
+      %h3 THE STRATEGY
+
+      %p We use only Ruby language and for us choosing LocomotiveCMS is evident. First we are coding a proto w/ Wagon and providing a demo to our customers, then we improve the AD; finally, we push to the production version to let the users write their own content.
+
+
+  #section#case-study-details
+    %h3 COMPANY NAME
+	 
+    %p le WattMan
+	 
+    %h3 COMPANY DESCRIPTION
+	 
+    %p Le Wattman is a digital agency founded in 2010, with a strong mission: through inspired, innovative and creative design and the use of cutting-edge technology we are able to build smart interfaces and enhance device efficiency.
+	 
+    %p With our new, unique and future-forward vision of the web, a vision based on efficiency, simplicity and our core values, we operate at all different levels on our clients' digital strategy: consulting & budgeting, creation of mobile web & extremely responsive websites, development of user-friendly mobile apps and development of specific technical tailor-made interfaces.
+
+    %h3 HEADQUARTERS
+ 
+    %p Paris, France
+ 
+    %h3 PREVIOUS/ALTERNATIVE CMS USED
+ 
+    %p Wordpress / Refinery / Radiant / own CMS
+ 
+    %h3 EXAMPLE OF LOCOMOTIVECMS WEBSITES:
+
+    %p
+    %a{ href: "http://www.anthonyramet.com", class: "" }http://www.anthonyramet.com
+
+    %p
+    %a{ href: "http://www.praxy.fr", class: "" }http://www.praxy.fr
+
+    %p
+    %a{ href: "http://artbyblazejr.com", class: "" }http://artbyblazejr.com
+
+    %p
+    %a{ href: "http://whosdeep.com", class: "" }http://whosdeep.com
+
+{% endblock %}
+
+{% endblock %}
+
